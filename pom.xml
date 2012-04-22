@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>mavenHibernateTest</groupId>
+    <artifactId>mavenHibernateTest</artifactId>
+    <version>1.0</version>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>JBoss</id>
+            <name>JBoss Repsitory</name>
+            <layout>default</layout>
+            <url>http://repository.jboss.org/maven2</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate</artifactId>
+            <version>3.5.4-Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-tools</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.1.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>1.6.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>2.2.8</version>
+            <!--<scope></scope>-->
+        </dependency>
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId></artifactId>
+            <!--<version>1.8.0.7</version>-->
+        </dependency>
+
+
+    </dependencies>
+
+
+    
+</project>
