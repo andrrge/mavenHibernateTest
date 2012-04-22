@@ -6,7 +6,14 @@
 
     <groupId>mavenHibernateTest</groupId>
     <artifactId>mavenHibernateTest</artifactId>
-    <version>1.0</version>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+    </build>
+
+
 
     <pluginRepositories>
         <pluginRepository>
@@ -20,19 +27,14 @@
     <dependencies>
         <dependency>
             <groupId>org.hibernate</groupId>
-            <artifactId>hibernate</artifactId>
-            <version>3.5.4-Final</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-tools</artifactId>
+            <artifactId>hibernate-core</artifactId>
+            <version>3.6.10.Final</version>
         </dependency>
 
         <dependency>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-            <version>1.1.1</version>
-            <scope>provided</scope>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
         </dependency>
 
         <dependency>
@@ -40,17 +42,20 @@
             <artifactId>jcl-over-slf4j</artifactId>
             <version>1.6.4</version>
         </dependency>
+
+        <dependency>
+            <groupId>javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>3.9.0.GA</version>
+        </dependency>
         <dependency>
             <groupId>org.hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
             <version>2.2.8</version>
             <!--<scope></scope>-->
         </dependency>
-        <dependency>
-            <groupId>org.hsqldb</groupId>
-            <artifactId></artifactId>
-            <!--<version>1.8.0.7</version>-->
-        </dependency>
+
+
 
 
     </dependencies>
