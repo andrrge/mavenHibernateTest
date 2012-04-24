@@ -11,32 +11,33 @@
 
     <build>
         <finalName>${project.artifactId}</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>1.2.1</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>java</goal>
-                        </goals>
-                        <!--<phase>compile</phase>-->
-                    </execution>
+        <!--<plugins>-->
+            <!--<plugin>-->
+                <!--<groupId>org.codehaus.mojo</groupId>-->
+                <!--<artifactId>exec-maven-plugin</artifactId>-->
+                <!--<version>1.2.1</version>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<goals>-->
+                            <!--<goal>java</goal>-->
+                        <!--</goals>-->
+                        <!--&lt;!&ndash;<phase>compile</phase>&ndash;&gt;-->
+                    <!--</execution>-->
 
-                </executions>
-                <configuration>
-                    <mainClass>org.hsqldb.Server</mainClass>
-                    <arguments>
-                        <argument>-database.0</argument>
-                        <argument>file:target/data/tutorial</argument>
-                    </arguments>
+                <!--</executions>-->
+                <!--<configuration>-->
+                    <!--<mainClass>org.hsqldb.Server</mainClass>-->
+                    <!--<arguments>-->
+                        <!--<argument>-database.0</argument>-->
+                        <!--<argument>file:target/data/tutorial</argument>-->
+                    <!--</arguments>-->
 
-                </configuration>
-<!--mvn exec:java-Dexec.mainClass="org.hsqldb.Server" -Dexec.args="-database.0 file:target/data/tutorial"-->
-            </plugin>
+                <!--</configuration>-->
+<!--&lt;!&ndash;mvn exec:java-Dexec.mainClass="org.hsqldb.Server" -Dexec.args="-database.0 file:target/data/tutorial"&ndash;&gt;-->
+<!--mvn exec:java -Dexec.mainClass="me.rge.hibernatetest.EventManager" -Dexec.args="store"-->
+            <!--</plugin>-->
 
-        </plugins>
+        <!--</plugins>-->
     </build>
 
 
